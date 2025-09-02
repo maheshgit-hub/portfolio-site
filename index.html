@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>My Portfolio</title>
 </head>
 
 <body>
   <header>
-    <h1>Mahesh Gaikwad</h1>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <h1 class="logo">Mahesh Gaikwad</h1>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -23,12 +24,13 @@
 
   <main>
     <article>
-      <section id="about">
+      <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Hello! I am Mahesh, an aspiring web developer passionate about building full-stack applications.</p>
+        <p>Hi, I’m Mahesh! A web developer passionate about building modern,
+          responsive websites and learning new technologies.</p>
       </section>
 
-      <section id="skills">
+      <section id="skills" class="section">
         <h2>Skills</h2>
         <ul>
           <li>HTML5, CSS3, JavaScript (ES6+)</li>
@@ -38,12 +40,27 @@
         </ul>
       </section>
 
-      <section id="projects">
+      <section id="projects" class="section">
         <h2>Projects</h2>
-        <ul>
-          <li><strong>Portfolio Website:</strong> A personal portfolio website showcasing my projects and skills.</li>
-          <li><strong>Ecommerce App:</strong> A full-stack ecommerce application with JWT user authentication.</li>
+        <div class="projects-grid">
+          <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website showcasing my projects and skills.</p>
+            <a href="https://maheshgit-hub.github.io/portfolio/" target="_blank">
+              <button class="btn">Live</button>
+            </a>
+          </div>
+          <div class="card">
+            <h3>Ecommerce App</h3>
+            <p>A full-stack ecommerce application with JWT user authentication.</p>
+          </div>
+          <div class="card">
+            <h3>Todo App</h3>
+            <p>A simple JavaScript app for managing tasks.</p>
+          </div>
+        </div>
       </section>
+
 
       <section id="contact">
         <h2>Contact</h2>
